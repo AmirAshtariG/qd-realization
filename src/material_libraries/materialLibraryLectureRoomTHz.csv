@@ -1,0 +1,10 @@
+Reflector,Material,RelativePermittivity
+Ceiling,limestones,1.6+0.023j
+LeftWall,limestones,1.6+0.023j
+BottomWall,limestones,1.6+0.023j
+TopWall,limestones,1.6+0.023j
+Floor,limestones,1.6+0.023j
+RightWall,Glass,2.58+0.34j
+Tables,Wood,1.46+0.42j
+Chair,Wood,1.46+0.42j
+TV,Glass,2.58+0.34j
