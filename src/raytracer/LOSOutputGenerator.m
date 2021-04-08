@@ -67,6 +67,11 @@ parse(p, varargin{:});
 qTx = p.Results.qTx;
 qRx = p.Results.qRx;
 
+%% Path loss parameters
+ple =1.75;
+sigma = 3.44; %dB
+shadowing = normrnd(0,sigma); %dB
+
 % Direction of departure (DoD) is simple the difference of position vectors
 % of Tx and Rx
 dodNoRot = Rx - Tx;
@@ -97,8 +102,8 @@ if isLOS==1 % if DoA exists
     output1(5:7) = doa;
     % Time delay
     output1(1,8)=delay/c;
-    % Path gain
-    output1(1,9) = 20*log10(lambda/(4*pi*delay));
+    % Modified Path gain
+    output1(1,9) = 20*log10(lambda/(4*pi*delay))+10*ple*log10(delay)+shadowing;
     % Aod azimuth
     output1(10) = mod(atan2d(dod(2),dod(1)), 360);
     % Aod elevation
