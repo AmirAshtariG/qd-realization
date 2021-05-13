@@ -104,7 +104,6 @@ for iterateNumberOfNodes = 1:numberOfNodes
     % NodePosition processing
     nodePositionTimeTmp = nodePositionTimeRaw{iterateNumberOfNodes};
     timeSamplesFile = size(nodePositionTimeTmp,1);
-    
     % Config file defines fewer positions in time than the numberOfTimeDivisions
     % defined in paraCfg
     if  timeSamplesFile< paraCfg.numberOfTimeDivisions &&  ...

@@ -1,14 +1,14 @@
 ParameterName	ParameterValue
 environmentFileName	THZLectureRoom.xml
 indoorSwitch	1
-numberOfTimeDivisions	1
+numberOfTimeDivisions	4
 referencePoint	[0,0,0]
 selectPlanesByDist	inf
 switchDiffuseComponent	0
 diffusePathGainThreshold	0
 switchQDModel	tgayMeasurements
 totalNumberOfReflections	1
-totalTimeDuration	1
+totalTimeDuration	10
 switchSaveVisualizerFiles	1
 carrierFrequency	140e9
 qdFilesFloatPrecision	6
