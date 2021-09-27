@@ -2,8 +2,8 @@ import random
 
 
 # Parameter Initilize
-Timestep = 500
-step = 0.003
+Timestep = 5000
+step = 0.0003
 reverse = 1
 
 # Valid Dims
@@ -44,22 +44,22 @@ def randommov():
 
 def determinsticmov():
     # Generate Determinstic Movement Include LOS & NLOS#
-    f0 = open("Deterministic/NodePosition0.dat", "w")
-    f1 = open("Deterministic/NodePosition1.dat", "w")
-    x0 = 2.8
-    y0 = 1.55
-    z0 = 0.5
-    x1 = 7.8
-    y1 = 1.55
-    z1 = 2.1
+    f0 = open("Deterministic10/NodePosition0.dat", "w")
+    f1 = open("Deterministic10/NodePosition1.dat", "w")
+    x0 = 0.5
+    y0 = 1
+    z0 = 3.5
+    x1 = 8.5
+    y1 = 7.5
+    z1 = 3
 
     for i in range(0, Timestep):
-        x0 -= step * random.random() * 0.03
-        y0 += step * random.random()
-        z0 += step * random.random() * 2.4
-        x1 -= step * random.random() * 1.05
-        y1 += step * random.random() * 3.8
-        z1 += step * random.random()
+        x0 += step * 0.05
+        y0 += step * 0.05
+        z0 += step * 0.03
+        x1 += step * 0.05
+        y1 += step * 0.05
+        z1 += step * 0.03
         f0.writelines(str(x0) + str(',') + str(y0) + str(',') + str(z0) + str('\n'))
         f1.writelines(str(x1) + str(',') + str(y1) + str(',') + str(z1) + str('\n'))
     f0.close()
