@@ -3,20 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3beab9e7-c27e-4c2a-9c68-b2a3472ce905" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deterministic/NodePosition0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Deterministic/NodePosition0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deterministic/NodePosition1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Deterministic/NodePosition1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examples/THZLectureRoom/Input/NodePosition0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/THZLectureRoom/Input/NodePosition0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examples/THZLectureRoom/Input/NodePosition1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/THZLectureRoom/Input/NodePosition1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examples/THZLectureRoom/Input/paraCfgCurrent.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/THZLectureRoom/Input/paraCfgCurrent.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examples/THZLectureRoom/Output/Ns3/QdFiles/Tx0Rx1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/THZLectureRoom/Output/Ns3/QdFiles/Tx0Rx1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examples/THZLectureRoom/Output/Ns3/QdFiles/Tx1Rx0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/THZLectureRoom/Output/Ns3/QdFiles/Tx1Rx0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examples/THZLectureRoom/Output/Ns3/QdFiles/qdOutput.json" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/THZLectureRoom/Output/Ns3/QdFiles/qdOutput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examples/THZLectureRoom/Output/Visualizer/Mpc.json" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/THZLectureRoom/Output/Visualizer/Mpc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examples/THZLectureRoom/Output/Visualizer/NodePositions.json" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/THZLectureRoom/Output/Visualizer/NodePositions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examples/THZLectureRoom/Output/Visualizer/PAAPosition.json" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/THZLectureRoom/Output/Visualizer/PAAPosition.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examples/THZLectureRoom/Output/Visualizer/RoomCoordinates.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/THZLectureRoom/Output/Visualizer/RoomCoordinates.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../visualizer/visualizer.mlapp" beforeDir="false" afterPath="$PROJECT_DIR$/../visualizer/visualizer.mlapp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
