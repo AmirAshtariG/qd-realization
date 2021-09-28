@@ -44,14 +44,14 @@ def randommov():
 
 def determinsticmov():
     # Generate Determinstic Movement Include LOS & NLOS#
-    f0 = open("Deterministic10/NodePosition0.dat", "w")
-    f1 = open("Deterministic10/NodePosition1.dat", "w")
-    x0 = 0.5
-    y0 = 1
+    f0 = open("Deterministic6/NodePosition0.dat", "w")
+    f1 = open("Deterministic6/NodePosition1.dat", "w")
+    x0 = 1.5
+    y0 = 3
     z0 = 3.5
-    x1 = 8.5
-    y1 = 7.5
-    z1 = 3
+    x1 = 7.5
+    y1 = 3
+    z1 = 3.5
 
     for i in range(0, Timestep):
         x0 += step * 0.05
