@@ -21,3 +21,5 @@
 *.asv
 *.m~
 *.csv
+*.dat
+*.json
