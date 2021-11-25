@@ -96,10 +96,10 @@ end
 % 1 = multipath until first order, 2 = multipath until second order (Default)
 para = fieldToNum(para, 'totalNumberOfReflections', [], 2);
 if strcmp(para.switchQDModel,'tgayMeasurements') ...
-        && para.totalNumberOfReflections>2
+        && para.totalNumberOfReflections>3
     warning(['totalNumberOfReflections for switchQDModel = tgayMeasurements ',...
-        'can not be considered higher than 2. Thus, setting Default value (2).']);
-    para.totalNumberOfReflections = 2;
+        'can not be considered higher than 3. Thus, setting Default value (3).']);
+    para.totalNumberOfReflections = 3;
 end
 
 % t is the time period in seconds. The time period for which the simulation

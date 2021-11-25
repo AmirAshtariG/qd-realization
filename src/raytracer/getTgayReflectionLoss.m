@@ -101,10 +101,12 @@ for reflectionOrderIndex = 1:orderReflection
         reflectionMaterialIndex = arrayOfMaterials(1,1);
     elseif  reflectionOrderIndex == 2
         reflectionMaterialIndex = arrayOfMaterials(1,2);
+    elseif  reflectionOrderIndex == 3
+        reflectionMaterialIndex = arrayOfMaterials(1,3);
     else
-        error(strcat('Incident angles are obtained till second order ',...
+        error(strcat('Incident angles are obtained till third order ',...
         'reflection. Thus, order of reflection cannot be considered ',... 
-        'higher than second order reflection.'));
+        'higher than third order reflection.'));
     end
     % Use Fresnel equation to derive power reflectivity
     if isnan(reflectionMaterialIndex)
@@ -132,7 +134,7 @@ function incidentAngle = angleOfIncidence(multipath)
 % used to calculate angle(s) of incident.
 % 
 % Output: 
-% incidentAngle - incident angles till second order reflections
+% incidentAngle - incident angles till third order reflections
 
 differenceVectorRxFirstPoI = (multipath(1,2:4) - multipath(1,5:7))...
                                 /norm(multipath(1,2:4) - multipath(1,5:7));
@@ -165,5 +167,30 @@ if multipath(1,1) == 2 % This is for second order reflection
     dpAoI = dot(differenceVectorRxSecondPoI,...
                 differenceVectorFirstPoISecondPoI);
     incidentAngle(2)  = 0.5*acosd(dpAoI);
+end
+if multipath(1,1) == 3 % This is for third order reflection
+    differenceVectorRxThirdPoI = (multipath(1,2:4) - multipath(1,5:7))...
+                                /norm(multipath(1,2:4) - multipath(1,5:7));
+    differenceVectorSecondPoIThirdPoI =...  
+                            (multipath(1,8:10) - multipath(1,5:7))...
+                            /( norm(multipath(1,8:10) - multipath(1,5:7)));
+    differenceVectorThirdPoISecondPoI = -differenceVectorSecondPoIThirdPoI;
+    differenceVectorFirstPoISecondPoI =...
+        (multipath(1,11:13) - multipath(1,8:10))/...
+        norm((multipath(1,11:13) - multipath(1,8:10)));
+    differenceVectorSecondPoIFirstPoI=-differenceVectorFirstPoISecondPoI;
+    differenceVectorTxFirstPoI =...
+        (multipath(1,14:16) - multipath(1,11:13))/...
+        norm((multipath(1,14:16) - multipath(1,11:13)));
+
+    dpAoI = dot(differenceVectorSecondPoIFirstPoI,...
+                differenceVectorTxFirstPoI);
+    incidentAngle(1) = 0.5*acosd(dpAoI);
+    dpAoI = dot(differenceVectorThirdPoISecondPoI,...
+                differenceVectorFirstPoISecondPoI);
+    incidentAngle(2)  = 0.5*acosd(dpAoI);  
+    dpAoI = dot(differenceVectorRxThirdPoI,...
+                differenceVectorSecondPoIThirdPoI);
+    incidentAngle(3)  = 0.5*acosd(dpAoI); 
 end
 end
