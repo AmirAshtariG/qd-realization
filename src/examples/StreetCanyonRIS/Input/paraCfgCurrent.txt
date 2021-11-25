@@ -1,12 +1,12 @@
 ParameterName	ParameterValue
 environmentFileName	StreetCanyonRIS.xml
 indoorSwitch	0
-numberOfTimeDivisions	8
+numberOfTimeDivisions	1
 referencePoint	[0,0,0]
 selectPlanesByDist	inf
-switchDiffuseComponent	1
+switchDiffuseComponent	0
 switchQDModel	tgayMeasurements
-totalNumberOfReflections	2
+totalNumberOfReflections	3
 totalTimeDuration	100
 switchSaveVisualizerFiles	1
 carrierFrequency	26e9
