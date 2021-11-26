@@ -27,3 +27,5 @@
 *.mlapp
 *.txt
 *.dat
+*.txt
+src/examples/StreetCanyonRIS/Output/Ns3/QdFiles/Tx0Rx1.txt
